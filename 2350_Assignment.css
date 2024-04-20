@@ -1,0 +1,153 @@
+body {
+    background-image: url('hogwarts-legacy-uhdpaper.com-4K-3.2832.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+@font-face {font-family: "Harry Potter";
+    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
+    src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
+}
+
+.Main{
+font-family: Harry Potter, Arial;
+padding: 40px;
+margin: 0 auto;
+max-width: 1000px;
+text-align: center;
+}
+
+#APIDataList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
+
+.character{
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5d5d5d;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px #5d5d5d;
+}
+
+.spell{
+        border-radius: 35px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #5d5d5d;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px #5d5d5d;
+}
+
+h1{
+    font-family: Harry Potter, Arial;
+    font-size:4em;
+    transition:all 0.1s ;
+    font-size: 400%;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    color: #aaaaaa;
+}
+
+p{
+    color: #aaaaaa;
+}
+
+.search_class {
+    display: flex;
+    gap: 20px;
+    width: 950px;
+    padding: 10px;
+    position: relative;
+    left: 45px;
+    font-family: Harry Potter, Arial;
+    font-size: medium;
+}
+
+.button_search_class {
+    height: 50px;
+    border-radius: 5px;
+    background: #aaaaaa;
+    gap: 20px;
+    width: 100px;
+    font-family: Harry Potter, Arial;
+}
+
+.filter_class {
+    height: 50px;
+    width: 100px;
+    border: 2px solid #aaaaaa;
+    border-radius: 5px;
+    gap: 20px;
+    font-family: Harry Potter, Arial;
+}
+
+#searchBar {
+    width: 700px;
+    height: 50px;
+    border: 2px solid #aaaaaa;
+    border-radius: 5px;
+    font-family: Harry Potter, Arial;
+    gap: 20px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.carousel_class {
+    width: 55vw;
+    height: 65vh;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.carousel_class > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide_class {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide_class > img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+}
+
+.slide_class[data_active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}

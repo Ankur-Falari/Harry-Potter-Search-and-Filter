@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISA</title>
+    <link rel="stylesheet" href="2350_Assignment.css">
+</head>
+<body>
+    <h1>Hogwart's Legacy</h1>
+    <div class="carousel_class" data_carousel>
+        <ul data_slides>
+          <li class="slide_class" data_active>
+            <img src="Gryffindor_ClearBG.jpg" alt="House Image #1">
+          </li>
+          <li class="slide_class">
+            <img src="Hufflepuff_ClearBG.jpg" alt="House Image #2">
+          </li>
+          <li class="slide_class">
+            <img src="RavenclawCrest.jpg" alt="House Image #3">
+          </li>
+          <li class="slide_class">
+            <img src="Slytherin_ClearBG.jpg" alt="House Image #4">
+          </li>
+        </ul>
+    </div>
+    <div class="Main">
+        <div class="search_class">
+            <div class="search_container">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Enter the name to search"/>
+            </div>
+            <div class="filter_container">
+                <select name="filter" class="filter_class">
+                    <option value="0">None</option>
+                    <option value="1">Characters</option>
+                    <option value="2">Spells</option>
+                    <option value="3">Students</option>
+                    <option value="4">Staff</option>
+                </select>
+                <button id="button_search" class="button_search_class">Show</button>
+            </div>
+        </div>
+        <ul id="APIDataList"></ul>
+    </div>
+    <script src="2350_Assignment.js"></script>
+</body>
+</html>
